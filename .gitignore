@@ -34,6 +34,4 @@ node_modules
 dist
 
 # Project specific ignores
-vagrant/boxes*
-vagrant/boxes/*
-vagrant/boxes/**
+/vagrant/boxes/*
