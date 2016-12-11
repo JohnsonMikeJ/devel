@@ -10,3 +10,5 @@ bug :/
 ## ~/home
 .bascrc, .vimrc, .gitconfig, .bash_aliases, other dotfiles, etc.
 
+## ~/vagrant
+VagrantFile's, etc
