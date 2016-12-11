@@ -8,6 +8,9 @@ used for base configurations. Built on OS X Host.
 - OS X El Capitan Version 10.11.6 (15G1108)
 
 `$ mkdir -p ~/vagrant/centos-6.8-min-x86_64`
+
 `$ cd  ~/vagrant/centos-6.8-min-x86_64`
+
 `$ wget https://raw.githubusercontent.com/JohnsonMikeJ/devel-enviro/master/vagrant/centos-6.8-min-x86_64/Vagrantfile`
+
 `$ vagrant up`
