@@ -46,5 +46,5 @@ sudo service network restart
 echo -e "Restarting dnsmasq service ..."
 sudo service dnsmasq restart
 
-iecho -e "Done..."
+echo -e "Done..."
 echo -e "Thanks for playing \"cut paste 'n go\""
