@@ -46,5 +46,10 @@ sudo service network restart
 echo -e "Restarting dnsmasq service ..."
 sudo service dnsmasq restart
 
+echo -e "Test pings (if anything times out you have an issue"
+ping -c 1 localhost
+ping -c 1 test.localhost
+ping -c 1 google.com
+
 echo -e "Done..."
 echo -e "Thanks for playing \"cut paste 'n go\""
