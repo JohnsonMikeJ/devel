@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Simple scrpt to install dnsmasq (lightweight caching dns nameserver) and enable
+# Simple script to install dnsmasq (lightweight caching dns nameserver) and enable
 #  .localhost, .example, .invalid; and .localhost.
 #
 # This script was designed to install dnsmasq on my CentOS Vagrant box.
