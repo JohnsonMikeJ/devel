@@ -19,7 +19,7 @@ echo -e "Updating Yum ..."
 sudo yum update
 
 echo -e "Installing required libraries and tools..."
-sudo yum -y install unzip gcc-c++ zlib-devel pcre-devel openssl-devel autoconf automake libtool
+sudo yum -y install unzip gcc-c++ zlib-devel pcre-devel openssl-devel autoconf automake libtool 'perl(ExtUtils::Embed)'
 
 echo -e "Creating working directory..."
 mkdir -p ~/local/src
@@ -51,7 +51,8 @@ echo -e "Yes, running as root. Its a local only dev box - security should not be
 wget http://nginx.org/download/nginx-1.11.7.tar.gz
 tar zxf nginx-1.11.7.tar.gz
 cd nginx-1.11.7
-./configure --sbin-path=/usr/sbin/nginx --conf-path=/etc/nginx/nginx.conf --pid-path=/var/run/nginx.pid --with-http_ssl_module --with-stream --error-log-path=/var/log/nginx/error.log --http-log-path=/var/log/nginx/access.log --user=root --group=root --with-ipv6 --with-debug --with-google_perftools_module
+#./configure --sbin-path=/usr/sbin/nginx --conf-path=/etc/nginx/nginx.conf --pid-path=/var/run/nginx.pid --with-http_ssl_module --with-stream --error-log-path=/var/log/nginx/error.log --http-log-path=/var/log/nginx/access.log --user=root --group=root --with-ipv6 --with-debug --with-google_perftools_module
+./configure --build=Beta 0.0.1 --user=root --group=root --sbin-path=/usr/sbin/nginx --conf-path=/etc/nginx/nginx.conf --pid-path=/var/run/nginx.pid  --error-log-path=/var/log/nginx/error.log --http-log-path=/var/log/nginx/access.log --with-threads --with-http_ssl_module --with-http_v2_module --with-http_xslt_module --with-http_gunzip_module --with-http_gzip_static_module --with-http_degradation_module --with-http_stub_status_module --with-http_perl_module --with-stream --with-stream_ssl_module --with-google_perftools_module --with-pcre --with-zlib --with-openssl --with-debug
 make
 sudo make install
 cd ~/local/src
