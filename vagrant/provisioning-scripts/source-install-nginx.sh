@@ -19,7 +19,7 @@ echo -e "Updating Yum ..."
 sudo yum update
 
 echo -e "Installing required libraries and tools..."
-sudo yum -y install unzip gcc-c++ zlib-devel pcre-devel openssl-devel autoconf automake libtool libxml2-devel libxslt-devel 'perl(ExtUtils::Embed)'
+sudo yum -y install unzip gcc-c++ zlib-devel pcre-devel openssl-devel autoconf automake libtool libxml2 libxslt libxml2-devel libxslt-devel 'perl(ExtUtils::Embed)'
 
 echo -e "Creating working directory..."
 mkdir -p ~/local/src
